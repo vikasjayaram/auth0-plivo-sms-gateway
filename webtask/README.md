@@ -18,7 +18,7 @@ wt profile ls
 
 ### Setup & Initialization
 
-- Copy the .env-webtask.sample to .env
+- Copy the .env-webtask.sample to .env-webtask
 
 
 ```sh
