@@ -1,0 +1,28 @@
+{
+  "options": {
+    "strategy": "sms",
+    "provider": "sms_gateway",
+    "gateway_url": "{URL_OF_YOUR_GATEWAY}",
+    "gateway_authentication": {
+        "method": "bearer",
+        "subject": "urn:Auth0",
+        "audience": "urn:PlivoSmsGateway",
+        "secret": "{GENERATE_A_SECRET}"
+    },
+    "from": "{SOURCE_PHONE_NUMEBR}",
+    "template": "Your verification code is: @@password@@",
+    "brute_force_protection": true,
+    "disable_signup": false,
+    "name": "sms",
+    "syntax": "md_with_macros",
+    "totp": {
+      "time_step": 300,
+      "length": 6
+    }
+  },
+  "strategy": "sms",
+  "name": "{NAME_YOUR_CONNECTION}",
+  "enabled_clients": [
+          
+  ]
+}
